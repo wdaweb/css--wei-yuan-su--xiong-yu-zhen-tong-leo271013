@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .bo{
+      width: 200px;
+      height: 80px;
+      background: linear-gradient(to bottom,rgb(236, 236, 236)30%,rgb(204, 204, 204),rgb(236, 236, 236));
+      margin: auto;
+      border: 1px solid black;
+      border-right:  25px solid black;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -960%;
+      right: 0;
+      color: gray;
+    }
+
+    .he::before{
+      content: "";
+      width: 500px;
+      height: 60px;
+      background: linear-gradient(to bottom,rgb(236, 236, 236)30%,rgb(204, 204, 204),rgb(236, 236, 236));
+      margin: auto;
+      border-radius: 5px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -620%;
+      right: 0;
+      transform: translate(-7.5%,0);
+      border: 1px solid black;
+    }
+
+    .bo::after{
+      content: "";
+      width: 200px;
+      height: 80px;
+      background: linear-gradient(to bottom,rgb(243, 245, 162)30%,rgb(183, 184, 122),rgb(243, 245, 162));
+      margin: auto;
+      border: 1px solid black;
+      border-left:  25px solid black;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 100%;
+      right: 0;
+      transform: translate(0,0);
+    }
+
+    .bo::before{
+      content: "";
+      width: 40px;
+      height: 80px;
+      margin: auto;
+      background: linear-gradient(to bottom,rgb(236, 236, 236)30%,rgb(204, 204, 204),rgb(236, 236, 236));
+      border: 1px solid black;
+      border-radius: 10%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -155%;
+      right: 0;
+      transform: translate(0,0);
+    }
+
+    .he{
+      width: 80px;
+      height: 60px;
+      background: linear-gradient(to bottom,white 49%,black,white 51%);
+      margin: auto;
+      position: absolute;
+      left: 30%;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    .he::after{
+      content: "";
+      width: 400px;
+      height: 15px;     
+      background-image: linear-gradient(to right,transparent 49%,black 50%,transparent 51%);
+      background-size: 20px 15px;
+      margin: auto;
+      position: absolute;
+      top: -110%;
+      bottom: 0;
+      left: -700%;
+      right: 0;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="he">
+    <div class="bo"><br><br><br>Made in Taiwan</div>
+  </div>
+</body>
+</html>

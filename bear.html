@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bear</title>
+  <style>
+    .a {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background-color: black;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .a::before {
+      content: "";
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+      background-color: white;
+      border: 7px solid black;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 80%;
+      left: 65%;
+      right: 0;
+    }
+
+    .a::after {
+      content: "";
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+      background-color: white;
+      border: 7px solid black;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 80%;
+      left: 0;
+      right: 65%;
+    }
+
+    .d {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: rgb(255, 255, 255);
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transform: scaleX(1.5);
+    }
+
+    .d::after {
+      content: "";
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: rgb(0, 0, 0);
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 65%;
+      left: 0;
+      right: 0;
+    }
+
+    .d::before {
+      content: "";
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: rgb(0, 0, 0);
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: -30%;
+      left: 0;
+      right: 0;
+      transform: scaleX(1.5);
+    }
+
+    .b {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: rgb(0, 0, 0);
+      border: 7px solid rgb(255, 255, 255);
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 45%;
+      left: 0;
+      right: 40%;
+    }
+
+    .b::after {
+      content: "";
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: rgb(255, 0, 0);
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: -320%;
+      left: -350%;
+      right: 0;
+    }
+
+    .b::before {
+      content: "";
+      width: 30px;
+      height: 30px;
+      background-color: rgb(255, 255, 255);
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: -750%;
+      left: 80%;
+      right: 0;
+      transform: skew(50deg);
+    }
+
+    .c {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: rgb(0, 0, 0);
+      border: 7px solid rgb(255, 255, 255);
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 45%;
+      left: 40%;
+      right: 0;
+    }
+
+    .c::after {
+      content: "";
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: rgb(255, 0, 0);
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: -320%;
+      left: 0;
+      right: -350%;
+    }
+
+    .c::before {
+      content: "";
+      width: 30px;
+      height: 30px;
+      background-color: rgb(255, 255, 255);
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: -750%;
+      left: -100%;
+      right: 0;
+      transform: skew(-50deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="a">
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+  </div>
+</body>
+
+</html>
